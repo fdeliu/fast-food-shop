@@ -30,11 +30,22 @@ h6 {
 }
 
 .default-background {
-  height: 70vh;
+  width: 100%;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-position: center;
+  flex-direction: column;
+  background-position: center center;
   background-size: cover;
-  color: rgb(10, 10, 9);
+  color: white;
+}
+
+.btn-yellow {
+  color: #ff9e09 !important;
+  border-color: #ff9e09 !important;
+}
+.btn-yellow:hover {
+  background: #ff9e09 !important;
+  color: #000 !important;
 }

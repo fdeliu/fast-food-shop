@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "gatsby";
 
 export default function Info({ imgSrc }) {
-  console.log(imgSrc);
   return (
     <section className="py-5">
       <div className="container">

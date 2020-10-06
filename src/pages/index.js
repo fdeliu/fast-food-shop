@@ -28,7 +28,7 @@ export const query = graphql`
         }
       }
     }
-    image2: file(relativePath: { eq: "our-story-image.jpeg" }) {
+    image2: file(relativePath: { eq: "our-story-img.jpeg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG

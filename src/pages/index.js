@@ -1,10 +1,11 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import BackgroundSection from "../components/BackgroundSection";
 import Info from "../components/info";
+import Menu from "../components/menu";
 
 const IndexPage = ({ data }) => {
   return (
@@ -15,6 +16,7 @@ const IndexPage = ({ data }) => {
         title="Fast food"
       />
       <Info imgSrc={data.image2.childImageSharp.fluid} />
+      <Menu menu={data.menu.nodes} />
     </Layout>
   );
 };
@@ -34,6 +36,28 @@ export const query = graphql`
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
+    }
+    menu: allContentfulFastFood {
+      nodes {
+        category
+        id
+        name
+        image {
+          title
+          fixed(width: 300, height: 300) {
+            src
+          }
+        }
+        price
+        descrption {
+          content {
+            content {
+              value
+            }
+          }
+        }
+      }
+      totalCount
     }
   }
 `;

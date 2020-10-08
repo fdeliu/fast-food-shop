@@ -17,6 +17,7 @@ const IndexPage = ({ data }) => {
         title="Fast food"
       />
       <Info imgSrc={data.image2.childImageSharp.fluid} />
+      <hr />
       <Menu menu={data.menu.nodes} />
       <Contact />
     </Layout>

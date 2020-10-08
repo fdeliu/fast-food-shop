@@ -46,12 +46,15 @@ function Navbar() {
         <div className={css}>
           <ul className="navbar-nav ml-auto">
             {links.map(link => (
-              <li className="nav-item active" key={link.id}>
+              <li className="nav-item" key={link.id}>
                 <Link className="nav-link" to={link.path}>
                   {link.text}
                 </Link>
               </li>
             ))}
+            <li className="nav-item">
+              <img src={cartIcon} className="snipcart-checkout" width="24" />
+            </li>
           </ul>
         </div>
       </div>

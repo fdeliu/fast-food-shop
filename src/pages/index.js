@@ -6,6 +6,7 @@ import SEO from "../components/seo";
 import BackgroundSection from "../components/BackgroundSection";
 import Info from "../components/info";
 import Menu from "../components/menu";
+import Contact from "../components/contact";
 
 const IndexPage = ({ data }) => {
   return (
@@ -17,6 +18,7 @@ const IndexPage = ({ data }) => {
       />
       <Info imgSrc={data.image2.childImageSharp.fluid} />
       <Menu menu={data.menu.nodes} />
+      <Contact />
     </Layout>
   );
 };

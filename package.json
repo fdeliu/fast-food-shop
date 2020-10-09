@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Flamur Deliu",
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "gatsby": "^2.24.66",
     "gatsby-background-image": "^1.1.2",
     "gatsby-image": "^2.4.20",

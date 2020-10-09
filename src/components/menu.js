@@ -12,16 +12,15 @@ const Menu = ({ menu }) => {
       ...Array.from(new Set(menu.map(item => item.category))),
     ]);
   }, [menu]);
-  console.log(menuItems);
 
   if (menuItems.length > 0) {
     return (
-      <section className="menu ">
+      <section className="menu">
         <h2 className="text-center py-5 display-4">our menu</h2>
         <div className="col-10 mx-auto text-center">
           {categories.map((category, i) => (
             <button
-              className="btn btn-yellow m-2"
+              className={"btn btn-yellow m-2 " + (selectedCategory == category ? "is-selected":"")}
               key={i}
               onClick={() => setSelectedCategory(category)}
             >

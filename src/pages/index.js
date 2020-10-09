@@ -7,8 +7,15 @@ import BackgroundSection from "../components/BackgroundSection";
 import Info from "../components/info";
 import Menu from "../components/menu";
 import Contact from "../components/contact";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const IndexPage = ({ data }) => {
+  AOS.init({
+    duration: 700,
+    once:false
+  });
   return (
     <Layout>
       <SEO title="Home" />

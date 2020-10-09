@@ -4,7 +4,7 @@ const Product = ({ product }) => {
   const [showDescription, setShowDescription] = useState(false);
   return (
     <div className="product col-12 col-sm-6 col-md-3 mb-4">
-      <div className="card" style={{ minHeight: "100%" }}>
+      <div className="card" style={{ minHeight: "100%" }} data-aos="zoom-in" data-aos-duration="1500">
         <img
           src={product.image.fixed.src}
           alt={product.image.title}

@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="row">
           <div className="col-10 mx-auto col-md-6 text-yellow text-center text-capitalize">
             <h6>
-              all rights reserved &copy; {new Date().getFullYear().toString()}
+             &copy; {new Date().getFullYear().toString()} Flamur Deliu
             </h6>
           </div>
         </div>

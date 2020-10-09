@@ -11,16 +11,21 @@ const Product = ({ product }) => {
           className="card-img-top"
         />
         <div className="card-body">
-          <div className="d-flex justify-content-between align-items-center">
-            <h6 style={{ fontWeight: "bold", width: "90%" }}>{product.name}</h6>
-            <p style={{ color: "#ff9e09" }}>{product.price} $</p>
+          <div className="content">
+            <div className="d-flex justify-content-between align-items-center">
+              <h6 style={{ fontWeight: "bold", width: "90%" }}>
+                {product.name}
+              </h6>
+              <p style={{ color: "#ff9e09" }}>{product.price} $</p>
+            </div>
+
+            <p className="mt-2">
+              {product.descrption.content[0].content[0].value}
+            </p>
           </div>
 
-          <p className="mt-2">
-            {product.descrption.content[0].content[0].value}
-          </p>
           <button
-            className="btn btn-yellow btn-block text-capitalize add-to-cart snipcart-add-item"
+            className="btn btn-yellow btn-block text-capitalize add-to-cart mt-auto snipcart-add-item"
             data-item-id={product.id}
             data-item-name={product.name}
             data-item-price={product.price}

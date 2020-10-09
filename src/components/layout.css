@@ -26,8 +26,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Courier New", Courier, monospace !important;
+  font-family: "Courier New", Courier, monospace;
   letter-spacing: 0.25 rem !important;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
 }
 
 .default-background {
@@ -42,6 +48,12 @@ h6 {
   color: white;
 }
 
+.default-background .sub-title {
+  width: 60%;
+  padding: 16px 30px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .btn-yellow {
   color: #ff9e09 !important;
   border-color: #ff9e09 !important;
@@ -51,11 +63,40 @@ h6 {
   color: #000 !important;
 }
 
-.contact {
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact,
+.info {
   background: #ece8dc;
 }
 
 .footer {
   background: #f8f9fa;
   color: black;
+}
+
+@media (max-width: 768px) {
+  .default-background .sub-title {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .default-background .title {
+    font-size: 36px;
+  }
+  .default-background .sub-title {
+    width: 90%;
+    font-size: 20px;
+  }
+  .default-background {
+    height: 60vh;
+  }
+
+  .info .info-description {
+    padding: 30px 14px 0px;
+  }
 }

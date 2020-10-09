@@ -2,8 +2,8 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="contact py-5">
-      <h1 className="text-center">contact us</h1>
+    <section className="contact pb-4">
+      <h1 className="text-center py-5 display-4">contact us</h1>
       <div className="row">
         <div className="col-10 col-sm-8 col-md-6 mx-auto">
           <form

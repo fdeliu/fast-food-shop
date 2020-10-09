@@ -14,10 +14,9 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <BackgroundSection
         imgSrc={data.image.childImageSharp.fluid}
-        title="Fast food"
+        title="Fast food shop"
       />
       <Info imgSrc={data.image2.childImageSharp.fluid} />
-      <hr />
       <Menu menu={data.menu.nodes} />
       <Contact />
     </Layout>

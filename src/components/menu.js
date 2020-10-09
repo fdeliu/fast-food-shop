@@ -16,8 +16,8 @@ const Menu = ({ menu }) => {
 
   if (menuItems.length > 0) {
     return (
-      <section className="menu py-5">
-        <h2 className="text-center">our menu</h2>
+      <section className="menu ">
+        <h2 className="text-center py-5 display-4">our menu</h2>
         <div className="col-10 mx-auto text-center">
           {categories.map((category, i) => (
             <button

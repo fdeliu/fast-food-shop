@@ -52,7 +52,7 @@ function Navbar() {
                 </Link>
               </li>
             ))}
-            <li className="nav-item">
+            <li className="nav-item my-auto">
               <img src={cartIcon} className="snipcart-checkout" width="24" />
             </li>
           </ul>

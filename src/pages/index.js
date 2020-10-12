@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
@@ -12,10 +12,12 @@ import 'aos/dist/aos.css';
 
 
 const IndexPage = ({ data }) => {
+ useEffect(() => {
   AOS.init({
     duration: 700,
     once:false
   });
+ }, [])
   return (
     <Layout>
       <SEO title="Home" />
